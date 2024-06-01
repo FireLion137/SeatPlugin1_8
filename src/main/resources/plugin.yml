@@ -1,0 +1,11 @@
+name: SeatPlugin18
+version: '${project.version}'
+main: org.firelion137.seatplugin18.SeatPlugin18
+api-version: '1.8.8'
+
+commands:
+  customDisplay:
+    description: "Spawns or delete a preset display"
+    usage: "Uso corretto: /customDisplay (spawn | delete)"
+    permission: firstplugin.command.custom-display
+    permission-message: "No permission"
