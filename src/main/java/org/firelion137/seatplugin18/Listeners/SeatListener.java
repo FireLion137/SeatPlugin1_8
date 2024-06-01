@@ -74,12 +74,13 @@ public class SeatListener implements Listener {
             seat.setCustomName("seat");
 
             armorStand.setPositionRotation(loc.getX(), loc.getY(), loc.getZ(), loc.getYaw(), loc.getPitch());
-            world.addEntity(armorStand, CreatureSpawnEvent.SpawnReason.CUSTOM);
-
-            seat.setPassenger(player);
-            SittingPlayerTask.getInstance().addPlayer(player.getUniqueId());
-            SittingPlayerTask.getInstance().addSeatLoc(loc);
-            SittingTimeBoard.getInstance().createNewScoreboard(player.getUniqueId());
+            Bukkit.getScheduler().runTaskLater(SeatPlugin18.getInstance(), () -> {
+                world.addEntity(armorStand, CreatureSpawnEvent.SpawnReason.CUSTOM);
+                seat.setPassenger(player);
+                SittingPlayerTask.getInstance().addPlayer(player.getUniqueId());
+                SittingPlayerTask.getInstance().addSeatLoc(loc);
+                SittingTimeBoard.getInstance().createNewScoreboard(player.getUniqueId());
+            },1);
         }
     }
 
