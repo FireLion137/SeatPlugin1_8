@@ -7,3 +7,6 @@
 + Counts time of players while being seated, using a yaml file
 + Implements a command to spawn a Top 5 Sitting Players display
 + Scoreboard while sitting
+
+# Usage
+Just download the [latest release](https://github.com/FireLion137/SeatPlugin1_8/releases/latest) an paste it in your Minecraft Paper 1.8.8 Server.
