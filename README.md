@@ -1,4 +1,6 @@
 # Seat Plugin for Minecraft Paper 1.8.8
+Minecraft Paper 1.8.8 Plugin to add Stairs as Seats and track seat players time.
+
 <p align="center">
   <img width="720" src="https://github.com/FireLion137/SeatPlugin1_8/assets/55352707/9dc5b5fa-6b5a-47e8-a23c-13c9a017d63a">
 </p>
